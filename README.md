@@ -1,16 +1,63 @@
-# React + Vite
+# نظام الدعم الفني | IT Support Ticket System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![IT Support System](https://img.shields.io/badge/Status-Completed-success) ![React](https://img.shields.io/badge/React-19-blue) ![Tailwind](https://img.shields.io/badge/Tailwind-CSS-cyan)
 
-Currently, two official plugins are available:
+نظام متكامل لإدارة تذاكر الدعم الفني، يتيح للموظفين الإبلاغ عن المشاكل التقنية بسهولة وللمسؤولين إدارتها وحلها. يتميز بواجهة عصرية (Dark Mode) تدعم اللغة العربية بالكامل.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A streamlined IT Support Ticket System allowing employees to report issues and IT staff to manage them. Features a modern bilingual (Arabic/English) interface with Dark Mode.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔗 Live Demo | رابط المعاينة
+**[https://fir-lec-8d921.web.app](https://fir-lec-8d921.web.app)**
 
-## Expanding the ESLint configuration
+## ✨ المميزات | Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🏢 للموظفين (Employee View)
+- **واجهة بسيطة**: صفحة هبوط مخصصة للإبلاغ عن الأعطال فقط.
+- **إشعارات فورية**: تنبيهات عند إرسال التذكرة بنجاح.
+- **بريد إلكتروني**: إرسال إشعار تلقائي لفريق الدعم عند فتح تذكرة جديدة.
+- **خصوصية**: لا يمكن للموظف رؤية باقي التذاكر.
+
+### 🛠️ للدعم الفني (IT Admin Dashboard)
+- **لوحة تحكم محمية**: الدخول يتطلب رمز مرور (Passcode).
+- **إحصائيات شاملة**: عرض عدد التذاكر (الكل، المفتوحة، قيد التنفيذ، المكتملة).
+- **إدارة الحالة**: تغيير حالة التذكرة (Open -> In Progress -> Resolved) بضغطة زر.
+- **فلتر وتصنيف**: تصفية التذاكر حسب الحالة.
+
+## 🚀 التقنيات المستخدمة | Tech Stack
+- **Frontend**: React.js (Vite)
+- **Styling**: Tailwind CSS (Dark Theme, RTL Support)
+- **State Management**: Redux Toolkit
+- **Backend/DB**: Firebase Firestore
+- **Notifications**: React Hot Toast
+- **Email**: EmailJS
+
+## 🛠️ التثبيت والتشغيل | Installation
+
+1. **استنساخ المشروع | Clone the repo**
+   ```bash
+   git clone https://github.com/your-username/it-support-ticket-system.git
+   cd it-support-ticket-system
+   ```
+
+2. **تثبيت الحزم | Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **إعداد المتغيرات | Environment Setup**
+   قم بإنشاء ملف `.env` وأضف بيانات Firebase و EmailJS:
+   ```env
+   VITE_FIREBASE_API_KEY=...
+   VITE_FIREBASE_AUTH_DOMAIN=...
+   VITE_EMAILJS_SERVICE_ID=...
+   ```
+
+4. **تشغيل السيرفر | Run Dev Server**
+   ```bash
+   npm run dev
+   ```
+
+## 🔐 بيانات الدخول | Access Credentials
+- **رمز مرور المسؤول (IT Admin Passcode)**: `1234`
