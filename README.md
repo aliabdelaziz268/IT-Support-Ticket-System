@@ -1,4 +1,4 @@
-# نظام الدعم الفني | IT Support Ticket System
+<!-- # نظام الدعم الفني | IT Support Ticket System
 
 ![IT Support System](https://img.shields.io/badge/Status-Completed-success) ![React](https://img.shields.io/badge/React-19-blue) ![Tailwind](https://img.shields.io/badge/Tailwind-CSS-cyan)
 
@@ -60,4 +60,4 @@ A streamlined IT Support Ticket System allowing employees to report issues and I
    ```
 
 ## 🔐 بيانات الدخول | Access Credentials
-- **رمز مرور المسؤول (IT Admin Passcode)**: `1234`
+- **رمز مرور المسؤول (IT Admin Passcode)**: `1234` -->
